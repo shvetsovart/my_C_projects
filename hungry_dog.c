@@ -48,7 +48,7 @@ int main() {
         field[ay][ax] = '*';
 
         for (int i = 0; i < N; ++i) { //output field
-            printf("%.*s\n", M, field[i]); //the basic %s outputs extra symbols for some reason so 
+            printf("%.*s\n", M, field[i]); //the basic %s outputs all matrix because it outputs everything before '\n' so 
                                         //I output it as M first symbols
         }
 
