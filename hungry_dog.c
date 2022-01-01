@@ -3,10 +3,11 @@
 #include <conio.h> //for getch and system("cls")
 #include <time.h>
 
-int N = 10, M = 20; //field's size
+#define N 10 //field's height
+#define M 20 //field's width
 
 int main() {
-    char field[10][20]; //change this also if you want another field size
+    char field[N][M];
 
     int x = 10, y = 5; //the pos of @
     int ax = rand() * 1.0 / RAND_MAX * (M - 2) + 1, //the apple pos
